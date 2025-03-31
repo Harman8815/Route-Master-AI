@@ -1,0 +1,81 @@
+@import "tailwindcss";
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url("/slider2.webp"); */
+  animation: bg-slideshow 12s infinite alternate;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 8px;
+}
+
+/* Keyframes for Background Slideshow */
+@keyframes bg-slideshow {
+  0% {
+    background-image: url("/slider1.webp");
+  }
+  33% {
+    background-image: url("/slider2.webp");
+  }
+  66% {
+    background-image: url("/slider3.webp");
+  }
+  100% {
+    background-image: url("/slider1.webp");
+  }
+}
+
+.service-card {
+  background: #ebf8ff; /* Light blue */
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 1s ease, color 1s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Flex container for logo and title */
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Icon size and color */
+.service-card-icon {
+  font-size: 2.5rem;
+  color: #3b82f6; /* Blue */
+  transition: color 1.8s ease;
+  transition-duration: 2s;
+}
+
+/* Title */
+.service-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b; /* Gray-800 */
+  transition: color 0.4s ease;
+}
+
+/* Description */
+.service-card-description {
+  font-size: 0.9rem;
+  color: #475569; /* Gray-600 */
+  transition: color 0.4s ease;
+}
+
+/* Hover effects */
+.service-card:hover {
+  background: linear-gradient(90deg, #3b82f6, #1e40af); /* Gradient blue */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover .service-card-icon,
+.service-card:hover .service-card-title,
+.service-card:hover .service-card-description {
+  color: white !important; /* Ensure color change works */
+}
