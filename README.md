@@ -151,13 +151,3 @@ See the [LICENSE](./LICENSE) file for details.
 - **TailwindCSS**
 
 ---
-
-
-## 🔗 **Social Links**
-
-- 🌐 [Website](https://yourwebsite.com)  
-- 📧 [Email](mailto:your-email@example.com)  
-- 💬 [Discord](https://discord.gg/)  
-- 🐦 [Twitter](https://twitter.com/)  
-
----
